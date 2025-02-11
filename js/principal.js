@@ -17,5 +17,7 @@ grupo.procesarPersonas(persona2);
 grupo.procesarPersonas(persona3);
 grupo.procesarPersonas(persona4);
 
-alert("El monto del ingreso menor es: $" + grupo.montoIngresoMenor());
-alert("El ingreso promedio es: $" + grupo.promedioIngresos());
+let salida = document.getElementById ("salida");
+
+salida.innerHTML = `El monto del ingreso menor es: $${grupo.montoIngresoMenor()} <br>
+ El ingreso promedio es: $${grupo.promedioIngresos()}`
