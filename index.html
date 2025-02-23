@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INGRESOS PERSONAS</title>
 </head>
 <body>
-    <div id="salida"></div>
-    <script src="./js/principal.js" type="module"></script>
+    <section id="mainForm">
+        <h3>INGRESOS PERSONAS</h3>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ingreso</th>
+            </tr>
+        </table>
+        <h5>Ingreso menor: <span id="mainForm_lblIngresoMenor">?</span></h5>
+        <h5>Promedio de ingresos: <span id="mainForm_lblPromedioIngresos">?</span></h5>
+        <button id="mainForm_btAgregar">Agregar Persona</button>
+    </section>
+    <section id="personasForm">
+        <h3>Datos de la Persona</h3>
+        <input type="text" id="personasForm_inNombre" placeholder="Nombre"></input>
+        <input type="text" id="personasForm_inIngreso" placeholder="Ingreso"></input>
+        <button id="personasForm_btAceptar">Aceptar</button>
+    </section>
 </body>
+<script type="module">
+    import Cl_principal from "./js/Cl_principal.js";
+    new Cl_principal ();
+</script>
 </html>

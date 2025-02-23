@@ -1,5 +1,5 @@
-export default class Cl_personas {
-    constructor (nombre, ingreso) { 
+export default class Cl_mPersonas {
+    constructor ({nombre, ingreso}) { 
         this.nombre = nombre;
         this.ingreso = ingreso;
     }
@@ -9,7 +9,7 @@ export default class Cl_personas {
     }
 
     get nombre () {
-        return this._nombre; 
+        return this._nombre.toUpperCase (); 
     }
 
     set ingreso (ingreso) {

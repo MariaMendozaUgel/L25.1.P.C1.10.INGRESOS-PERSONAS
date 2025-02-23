@@ -1,5 +1,5 @@
-import Cl_personas from "./Cl_personas.js";
-export default class Cl_grupo {
+import Cl_mPersonas from "./Cl_mPersonas.js";
+export default class Cl_mGrupo {
     constructor() {
         this.acumIngresos = 0;
         this.contPersonas = 0;
